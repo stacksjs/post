@@ -1,3 +1,4 @@
+Andris
 antfu
 audiox
 biomejs
@@ -38,6 +39,7 @@ postcompile
 prefetch
 preinstall
 proxied
+Reinman
 SASL
 shikijs
 shoutout

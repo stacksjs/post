@@ -214,6 +214,7 @@ We would like to extend our thanks to the following sponsors for funding Stacks 
 
 ## Credits
 
+- [Andris Reinman](https://github.com/andris9)
 - [Chris Breuer](https://github.com/chrisbbreuer)
 - [All Contributors](../../contributors)
 

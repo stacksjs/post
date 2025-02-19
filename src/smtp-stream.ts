@@ -88,7 +88,7 @@ class SMTPStream extends Writable {
     let newlineRegex
 
     let called = false
-    let done = (...args) => {
+    const done = (...args) => {
       if (called) {
         return
       }
@@ -104,7 +104,7 @@ class SMTPStream extends Writable {
       newlineRegex = /\r?\n/g
       data = this._remainder + chunk.toString('binary')
 
-      let readLine = () => {
+      const readLine = () => {
         let match
         let line
         let buf
@@ -144,7 +144,7 @@ class SMTPStream extends Writable {
    */
   _feedDataStream(chunk, done) {
     let i
-    let endseq = Buffer.from('\r\n.\r\n')
+    const endseq = Buffer.from('\r\n.\r\n')
     let len
     let handled
     let buf
