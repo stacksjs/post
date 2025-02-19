@@ -43,10 +43,10 @@ jobs:
         uses: softprops/action-gh-release@v2
         with:
           files: |
-            bin/mail-server-linux-x64
-            bin/mail-server-linux-arm64
-            bin/mail-server-windows-x64.exe
-            bin/mail-server-darwin-x64
-            bin/mail-server-darwin-arm64
+            bin/post-linux-x64
+            bin/post-linux-arm64
+            bin/post-windows-x64.exe
+            bin/post-darwin-x64
+            bin/post-darwin-arm64
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
