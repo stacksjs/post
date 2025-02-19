@@ -34,7 +34,7 @@
     "eslint-config-prettier": "9.1.0",
     "grunt": "1.6.1",
     "grunt-cli": "1.5.0",
-    "grunt-eslint": "24.3.0",
+    "grunt-eslint": "25.0.0",
     "grunt-mocha-test": "0.13.3",
     "mocha": "10.7.3",
     "pem": "1.14.8"
