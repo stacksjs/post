@@ -17,7 +17,7 @@
 
 ## Features
 
-- 📨 **Mail Server** _lightweight & configurable
+- 📨 **Mail Server** _lightweight & configurable_
 - 🛠️ **Mail Utilities** _send, receive, and manage emails_
 - 📦 **Mail UI** _web interfaces for managing emails, including a component library_
 - 🤖 **CLI** _command-line interface for managing emails_
