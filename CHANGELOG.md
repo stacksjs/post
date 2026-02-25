@@ -1,6 +1,5 @@
 # Changelog
 
-
 ## v0.9.1...main
 
 [compare changes](https://github.com/stacksjs/rpx/compare/v0.9.1...main)
@@ -404,7 +403,6 @@
 - Chris <chrisbreuer93@gmail.com>
 
 ## ...main
-
 
 ### 🏡 Chore
 

@@ -15,6 +15,17 @@ interface Logger {
   error: (...args: any[]) => void
 }
 
+
+function getLogger(options: any, config: any): Logger {
+  const level = options?.loglevel || options?.logLevel || 'info'
+  const component = config?.component || 'smtp'
+  return {
+    info: (...args: any[]) => { if (level !== 'error') console.log(`[${component}]`, ...args) },
+    debug: (...args: any[]) => { if (level === 'debug') console.log(`[${component}]`, ...args) },
+    error: (...args: any[]) => { console.error(`[${component}]`, ...args) },
+  }
+}
+
 const CLOSE_TIMEOUT = 30 * 1000 // how much to wait until pending connections are terminated
 
 /**

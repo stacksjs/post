@@ -1150,7 +1150,7 @@ export class SMTPConnection extends EventEmitter implements SMTPConnection {
       }
 
       // value is xtext
-      value = (value[0] || '').replace(/\+([0-9A-F]{2})/g, (match, hex) => unescape(`%${hex}`))
+      value = (value[0] || '').replace(/\+([0-9A-F]{2})/g, (_match, hex) => unescape(`%${hex}`))
 
       if (typeof value === 'string') {
         if (value.toUpperCase() === '[UNAVAILABLE]') {

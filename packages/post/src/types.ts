@@ -93,5 +93,5 @@ export interface AuthError extends Error {
   responseCode?: number
 }
 
-export type AuthCallback = (err: AuthError | null, response?: any) => void
+export type AuthCallback = (_err: AuthError | null, _response?: any) => void
 // type SASLHandler = (this: SMTPConnection, args: string[], callback: () => void) => void

@@ -49,8 +49,8 @@
   ],
   "scripts": {
     "build": "echo 'coming soon'",
-    "lint": "bunx --bun eslint .",
-    "lint:fix": "bunx --bun eslint . --fix",
+    "lint": "bunx --bun pickier lint .",
+    "lint:fix": "bunx --bun pickier lint . --fix",
     "release": "bun publish --access public",
     "prepublishOnly": "bun --bun run build",
     "test": "bun test",

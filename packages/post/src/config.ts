@@ -53,8 +53,7 @@ export const defaultConfig: MailServerConfig = {
   verbose: false,
 }
 
-// @ts-expect-error dtsx issue
-// eslint-disable-next-line antfu/no-top-level-await
+// eslint-disable-next-line ts/no-top-level-await
 export const config: MailServerConfig = await loadConfig({
   name: 'post',
   cwd: resolve(__dirname, '..'),

@@ -1,13 +1,15 @@
 import { dts } from 'bun-plugin-dtsx'
 
-const resp = await Bun.build({
+// eslint-disable-next-line ts/no-top-level-await
+const _resp = await Bun.build({
   target: 'bun',
   entrypoints: ['./src/index.ts'],
   outdir: './dist',
   plugins: [dts()],
 })
 
-const resp2 = await Bun.build({
+// eslint-disable-next-line ts/no-top-level-await
+const _resp2 = await Bun.build({
   target: 'bun',
   entrypoints: ['./bin/cli.ts'],
   outdir: './dist',
