@@ -78,7 +78,7 @@ interface Session {
   }
   transaction?: number
   tlsOptions?: CipherNameAndProtocol
-  servername?: string
+  servername?: string | false | null
   clientHostname?: string | false
   openingCommand?: string | false
   hostNameAppearsAs?: string | false
@@ -109,7 +109,7 @@ interface ConnectionOptions {
 // Add custom type declaration for TLSSocket
 declare module 'node:tls' {
   interface TLSSocket {
-    servername?: string
+    servername: string | false | null
   }
 }
 
