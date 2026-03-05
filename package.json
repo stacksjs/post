@@ -46,12 +46,11 @@
     "fresh": "bunx rimraf node_modules/ bun.lock && bun i",
     "prepublishOnly": "bun --bun run build && bun run compile:all",
     "test": "bun test",
-    "lint": "bunx --bun pickier lint .",
-    "lint:fix": "bunx --bun pickier lint . --fix",
+    "lint": "bunx --bun pickier .",
+    "lint:fix": "bunx --bun pickier . --fix",
     "changelog": "bunx logsmith --verbose",
     "changelog:generate": "bunx logsmith --output CHANGELOG.md",
     "release": "bun run changelog:generate && bunx bumpx prompt --recursive",
-    "postinstall": "bunx git-hooks",
     "typecheck": "bunx tsc --noEmit",
     "dev:docs": "bun --bun vitepress dev docs",
     "build:docs": "bun --bun vitepress build docs",
@@ -74,14 +73,6 @@
   },
   "overrides": {
     "unconfig": "0.3.10"
-  },
-  "git-hooks": {
-    "pre-commit": {
-      "staged-lint": {
-        "*.{js,ts,json,yaml,yml,md}": "bunx --bun pickier lint --fix"
-      }
-    },
-    "commit-msg": "bunx gitlint --edit .git/COMMIT_EDITMSG"
   },
   "workspaces": [
     "packages/*"
