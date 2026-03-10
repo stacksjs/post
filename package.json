@@ -56,7 +56,8 @@
     "typecheck": "bunx tsc --noEmit",
     "dev:docs": "bun --bun vitepress dev docs",
     "build:docs": "bun --bun vitepress build docs",
-    "preview:docs": "bun --bun vitepress preview docs"
+    "preview:docs": "bun --bun vitepress preview docs",
+    "postinstall": "bunx git-hooks"
   },
   "devDependencies": {
     "@stacksjs/bumpx": "^0.2.4",
@@ -69,8 +70,17 @@
     "bun-plugin-dtsx": "^0.21.17",
     "bunfig": "^0.15.6",
     "cac": "^6.7.14",
+    "bun-git-hooks": "^0.3.1",
     "pickier": "^0.1.20",
     "typescript": "^5.9.3"
+  },
+  "git-hooks": {
+    "pre-commit": {
+      "staged-lint": {
+        "*.{js,ts,json,yaml,yml,md}": "bunx --bun pickier lint --fix"
+      }
+    },
+    "commit-msg": "bunx gitlint --edit .git/COMMIT_EDITMSG"
   },
   "overrides": {
     "unconfig": "0.3.10"
