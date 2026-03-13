@@ -2,7 +2,7 @@
 
 ## About
 
-A modern mail server & utilities.
+Post is a lightweight, configurable mail server built with TypeScript (zero dependencies) that provides SMTP/SMTPS support, TLS encryption, authentication, and spam protection. It can be used as a library (`SMTPServer` class) or via the `post` CLI, which handles server management, user/queue management, TLS certificate setup, monitoring, and backups. Configuration is done through `post.config.ts` covering server ports, TLS, auth, storage, security rate limiting, and logging.
 
 ## Linting
 
