@@ -1,17 +1,16 @@
 <p align="center"><img src="https://github.com/stacksjs/mail-server/blob/main/.github/art/cover.jpg?raw=true" alt="Social Card of this repo"></p>
 
-[![npm version][npm-version-src]][npm-version-href]
-[![GitHub Actions][github-actions-src]][github-actions-href]
-[![Commitizen friendly][commitizen-src]][commitizen-href]
-<!-- [![npm downloads][npm-downloads-src]][npm-downloads-href] -->
-<!-- [![Codecov][codecov-src]][codecov-href] -->
+[![npm version](https://img.shields.io/npm/v/@stacksjs/mail-server?style=flat-square)](https://npmjs.com/package/@stacksjs/mail-server)
+[![GitHub Actions](https://img.shields.io/github/actions/workflow/status/stacksjs/mail-server/ci.yml?style=flat-square&branch=main)](https://github.com/stacksjs/mail-server/actions?query=workflow%3Aci)
+[![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
+<!-- [![npm downloads](https://img.shields.io/npm/dm/@stacksjs/mail-server?style=flat-square)](https://npmjs.com/package/@stacksjs/mail-server) -->
+<!-- [![Codecov](https://img.shields.io/codecov/c/gh/stacksjs/mail-server/main?style=flat-square)](https://codecov.io/gh/stacksjs/mail-server) -->
 
 # The Post
 
 > Finally a mail server that can be managed.
 >
-> [!NOTE]
-> Perfect for local development and testing environments. _Production-ready release coming soon!_
+> **Note:** Perfect for local development and testing environments. _Production-ready release coming soon!_
 >
 > While this mail server works in a zero-setup & zero-config way, you still have to maintain the infrastructure that the server is deployed & running on. To automate it, including pretty server metrics visualizations & alerting, you may want to check out [Stacks](https://github.com/stacksjs/stacks), as it ships a full-featured mail server with a management interface/dashboard.
 
@@ -276,15 +275,3 @@ We would like to extend our thanks to the following sponsors for funding Stacks 
 The MIT License (MIT). Please see [LICENSE](https://github.com/stacksjs/stacks/tree/main/LICENSE.md) for more information.
 
 Made with 💙
-
-<!-- Badges -->
-[npm-version-src]: https://img.shields.io/npm/v/@stacksjs/mail-server?style=flat-square
-[npm-version-href]: https://npmjs.com/package/@stacksjs/mail-server
-[github-actions-src]: https://img.shields.io/github/actions/workflow/status/stacksjs/mail-server/ci.yml?style=flat-square&branch=main
-[github-actions-href]: https://github.com/stacksjs/mail-server/actions?query=workflow%3Aci
-
-[commitizen-src]: https://img.shields.io/badge/commitizen-friendly-brightgreen.svg
-[commitizen-href]: http://commitizen.github.io/cz-cli/
-
-<!-- [codecov-src]: https://img.shields.io/codecov/c/gh/stacksjs/mail-server/main?style=flat-square
-[codecov-href]: https://codecov.io/gh/stacksjs/mail-server -->
