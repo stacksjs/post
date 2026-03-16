@@ -464,6 +464,7 @@ export class SMTPServer extends EventEmitter {
     })
 
     // apply shorthand handlers
+    // eslint-disable-next-line max-statements-per-line
     ;['onConnect', 'onSecure', 'onAuth', 'onMailFrom', 'onRcptTo', 'onData', 'onClose'].forEach((handler) => {
       if (typeof this.options[handler] === 'function')
         this[handler as keyof this] = this.options[handler]
@@ -651,6 +652,7 @@ export class SMTPServer extends EventEmitter {
     const ctxMap = this.options.sniOptions || {}
     // sniOptions is either an object or a Map with domain names as keys and TLS option objects as values
     if (typeof ctxMap.get === 'function') {
+      // eslint-disable-next-line max-statements-per-line
       ;(ctxMap as Map<string, TLSSocketOptions>).forEach((ctx, servername) => {
         this.secureContext.set(this._normalizeHostname(servername), createSecureContext(getTLSOptions(ctx)))
       })
@@ -668,6 +670,7 @@ export class SMTPServer extends EventEmitter {
       // apply changes
       Object.keys(defaultTlsOptions || {}).forEach((key) => {
         if (!(key in this.options)) {
+          // eslint-disable-next-line max-statements-per-line
           ;(this.options as Record<string, any>)[key] = (defaultTlsOptions as Record<string, any>)[key]
         }
       })

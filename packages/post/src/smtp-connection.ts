@@ -1481,6 +1481,7 @@ export class SMTPConnection extends EventEmitter implements SMTPConnection {
     }
 
     // Apply additional socket options if these are set in the server options
+    // eslint-disable-next-line max-statements-per-line
     ;(['requestCert', 'rejectUnauthorized', 'ALPNProtocols', 'SNICallback', 'session', 'requestOCSP'] as const).forEach((key) => {
       if (key in this._server.options) {
         socketOptions[key] = this._server.options[key]

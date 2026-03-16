@@ -1,3 +1,4 @@
+/* eslint-disable no-console */
 import type { SMTPServerOptions } from '../src'
 import process from 'node:process'
 import { CAC } from 'cac'

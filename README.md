@@ -2,14 +2,14 @@
 
 [![npm version][npm-version-src]][npm-version-href]
 [![GitHub Actions][github-actions-src]][github-actions-href]
-[![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
+[![Commitizen friendly][commitizen-src]][commitizen-href]
 <!-- [![npm downloads][npm-downloads-src]][npm-downloads-href] -->
 <!-- [![Codecov][codecov-src]][codecov-href] -->
 
 # The Post
 
 > Finally a mail server that can be managed.
-
+>
 > [!NOTE]
 > Perfect for local development and testing environments. _Production-ready release coming soon!_
 >
@@ -219,7 +219,7 @@ export default {
 }
 ```
 
-_Then run:_
+Then run:
 
 ```bash
 post start
@@ -282,6 +282,9 @@ Made with 💙
 [npm-version-href]: https://npmjs.com/package/@stacksjs/mail-server
 [github-actions-src]: https://img.shields.io/github/actions/workflow/status/stacksjs/mail-server/ci.yml?style=flat-square&branch=main
 [github-actions-href]: https://github.com/stacksjs/mail-server/actions?query=workflow%3Aci
+
+[commitizen-src]: https://img.shields.io/badge/commitizen-friendly-brightgreen.svg
+[commitizen-href]: http://commitizen.github.io/cz-cli/
 
 <!-- [codecov-src]: https://img.shields.io/codecov/c/gh/stacksjs/mail-server/main?style=flat-square
 [codecov-href]: https://codecov.io/gh/stacksjs/mail-server -->
