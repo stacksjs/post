@@ -28,13 +28,13 @@
   ],
   "exports": {
     ".": {
-      "import": "./packages/post/dist/src/index.js"
+      "import": "./packages/post/dist/index.js"
     }
   },
-  "module": "./packages/post/dist/src/index.js",
+  "module": "./packages/post/dist/index.js",
   "types": "./packages/post/dist/index.d.ts",
   "bin": {
-    "post": "./packages/post/dist/bin/cli.js"
+    "post": "./packages/post/dist/cli.js"
   },
   "files": [
     "README.md",
