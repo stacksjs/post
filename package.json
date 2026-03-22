@@ -60,7 +60,6 @@
     "postinstall": "bunx git-hooks"
   },
   "devDependencies": {
-    "@stacksjs/docs": "^0.70.23",
     "@stacksjs/clapp": "^0.2.0",
     "typescript": "^5.9.3",
     "better-dx": "^0.2.7"
