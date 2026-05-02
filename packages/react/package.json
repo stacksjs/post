@@ -48,7 +48,7 @@
     "dist"
   ],
   "scripts": {
-    "build": "bun build ./index.ts --outdir ./dist --target bun && bunx --bun dtsx",
+    "build": "bun --bun build.ts",
     "lint": "bunx --bun pickier lint .",
     "lint:fix": "bunx --bun pickier lint . --fix",
     "release": "bun publish --access public",
