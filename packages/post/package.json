@@ -73,6 +73,6 @@
     "typescript": "^5.7.3"
   },
   "lint-staged": {
-    "*.{js,ts}": "bunx --bun eslint . --fix"
+    "*.{js,ts}": "bunx --bun pickier . --fix"
   }
 }
