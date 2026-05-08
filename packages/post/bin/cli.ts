@@ -1,3 +1,4 @@
+#!/usr/bin/env bun
 /* eslint-disable no-console */
 import type { SMTPServerOptions } from '../src'
 import process from 'node:process'
