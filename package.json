@@ -60,9 +60,9 @@
     "postinstall": "bunx git-hooks"
   },
   "devDependencies": {
-    "@stacksjs/clapp": "^0.2.0",
+    "@stacksjs/clapp": "^0.2.15",
     "typescript": "^5.9.3",
-    "better-dx": "^0.2.15"
+    "better-dx": "^0.2.25"
   },
   "git-hooks": {
     "pre-commit": {
